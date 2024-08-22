@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+    color: #ffa511;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: rgb(76, 87, 130) double underline;
+}

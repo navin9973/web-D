@@ -1,0 +1,21 @@
+*{
+    color: goldenrod;
+}
+h1,h3{
+    font-family: Impact;
+}
+#login,#signup{
+    background-color: aqua;
+}
+.upvote{
+    background-color: green;
+}
+p a{
+    color: aquamarine;
+    background-color: black;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
