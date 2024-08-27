@@ -79,3 +79,10 @@ let list = [
 // num=Math.floor(num);
 //num=num+1;
 // console.log(num);
+
+let num=Math.floor(Math.random()*10000)+1;
+// num=num*10000;
+// num=Math.floor(num);
+// num=num+1;
+console.log(num);
+
