@@ -1,0 +1,31 @@
+#out{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: orange;
+    
+    display: flex;
+    
+}
+.eye{
+
+    translate: 40px 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+#a{
+    margin-right: 40px;
+}
+#c{
+height: 40px;
+width: 100px;
+background-color: red;
+border-radius: 0 0 50px 50px;
+/* margin-top: 100px;
+translate: -55px 12px; */
+position: absolute ;
+top: 120px;
+left: 60px;
+}
