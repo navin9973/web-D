@@ -29,3 +29,18 @@ position: absolute ;
 top: 120px;
 left: 60px;
 }
+
+#file{
+    height: 200px;
+    width: 300px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction:column;
+    border-radius: 50;
+}
+#file div{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 1px solid black;
+}
