@@ -1,4 +1,72 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.main_box{
+       background: url("photo.jpg");
+       height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    
+}
+.sidebar_menu{
+height: 100vh;
+width: 200px;
+background-color: rgb(43, 41, 41);
+box-shadow: 2px 2px rgb(30, 28, 28);
+
+}
+ .logo{
+    text-align: center;
+   padding-top: 10px;
+    
+    
+}
+a{
+    text-decoration:none;
+    color: white;
+    padding-left: 10px;
+    
+}
+.menu{
+    margin: 10px;
+    
+}
+li{
+    padding: 10px;
+   
+    color: white;
+}
+.social_media{
+   
+    position:absolute;
+    bottom:0;
+    left: 40px;
+    
+}
+.social_media ul a i:hover{
+    transform: scale(1.5);
+}
+#check{
+    display: none;
+}
+.btn_two{
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 170px;
+    line-height: 10px;
+    /* top: 0; */
+    
+
 }
