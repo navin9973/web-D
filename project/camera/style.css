@@ -22,12 +22,20 @@
 height: 100vh;
 width: 200px;
 background-color: rgb(43, 41, 41);
-box-shadow: 2px 2px rgb(30, 28, 28);
+box-shadow: 3px 3px 3px 3px rgb(118, 113, 113);
+position: absolute;
+left:-300px;
 
 }
  .logo{
     text-align: center;
-   padding-top: 10px;
+    
+   /* padding-top: 10px; */
+   position: relative;
+   /* left: 40px; */
+   top: 20px;
+   box-shadow: 1px 1px 3px 3px rgb(103, 96, 96);
+
     
     
 }
@@ -35,10 +43,13 @@ a{
     text-decoration:none;
     color: white;
     padding-left: 10px;
+    font-size: medium;
     
 }
 .menu{
-    margin: 10px;
+    margin-left: 10px;
+    padding-top: 40px;
+    
     
 }
 li{
@@ -46,15 +57,19 @@ li{
    
     color: white;
 }
-.social_media{
+.social_media  {
    
     position:absolute;
-    bottom:0;
-    left: 40px;
-    
+    bottom:10px;
+    left: 40px;   
 }
-.social_media ul a i:hover{
+.social_media ul a i{
+    opacity: 0.5;
+}
+ .social_media ul a i:hover{
+    opacity: 1;
     transform: scale(1.5);
+    
 }
 #check{
     display: none;
@@ -63,10 +78,25 @@ li{
     color:white;
     font-size: 20px;
     font-weight: 700;
-    position: absolute;
-    left: 170px;
+    position:absolute;
+    left: 175px;
+    
     line-height: 10px;
-    /* top: 0; */
+    
     
 
+}
+.menu ul li:hover{
+    box-shadow: 1px 1px 1px 1px rgb(212, 101, 101);
+    
+}
+.btn_two i:hover{
+    font-size: 25px;
+}
+.btn_one i:hover{
+font-size: 30px;
+}
+#check:checked~.sidebar_menu{
+    left:0;
+       
 }
