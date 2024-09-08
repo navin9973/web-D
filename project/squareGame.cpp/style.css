@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+   font-family: monospace;
+}
+.up{display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
