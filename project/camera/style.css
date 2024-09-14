@@ -22,7 +22,7 @@
 height: 100vh;
 width: 200px;
 background-color: rgb(43, 41, 41);
-box-shadow: 3px 3px 3px 3px rgb(118, 113, 113);
+box-shadow: 3px 3px 8px   rgb(118, 113, 113);
 position: absolute;
 left:-300px;
 
@@ -99,4 +99,4 @@ font-size: 30px;
 #check:checked~.sidebar_menu{
     left:0;
        
-}
+} 
