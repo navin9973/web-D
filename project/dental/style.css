@@ -1,0 +1,899 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff2e5;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    color: #e96a25;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #7a4a1e;
+    margin-left: 5px;
+}
+
+.logo p {
+    font-size: 10px;
+    color: #7a4a1e;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #7a4a1e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e96a25;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.appointment-btn, .help-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.appointment-btn {
+    background-color: #f68b25;
+    color: white;
+    font-weight: bold;
+}
+
+.appointment-btn:hover {
+    background-color: #e96a25;
+}
+
+.help-btn {
+    background-color: transparent;
+    border: 2px solid #f68b25;
+    color: #f68b25;
+    font-weight: bold;
+}
+
+.help-btn:hover {
+    background-color: #f68b25;
+    color: white;
+}
+
+/* Slider Section */
+.slider {
+
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    /* height: 600px; */
+    object-fit: contain;
+    display: none;
+}
+
+.slides img:first-child {
+    display: block;
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.faq-column {
+    width: 45%;
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.plus {
+    font-size: 24px;
+    color: #f57c00;
+    font-weight: bold;
+}
+
+.faq-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .appointment-btn, .help-btn {
+        width: 100%;
+    }
+
+    .faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-column {
+        width: 100%;
+    }
+
+    .faq-item {
+        justify-content: space-between;
+    }
+}
+
+/* Beyond Dentistry Section */
+.beyond-dentistry {
+    background-color: #fdf5ee;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.beyond-dentistry-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.beyond-dentistry h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.beyond-dentistry p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.dentistry-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dentistry-cards .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.dentistry-cards .card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.dentistry-cards .card p {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.dentistry-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .dentistry-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dentistry-cards .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Unmatched Dental Excellence Section */
+.dental-excellence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #fdf5ee;
+}
+
+.dental-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.dental-info {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.dental-info h2 {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dental-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dental-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dental-info ul li img {
+    margin-right: 15px;
+    width: 50px;
+    height: auto;
+}
+
+.dental-info ul li span {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Wider Doctor Cards with Placement Adjustments */
+.dental-doctors {
+    display: flex;
+    gap: 20px;
+    width: 60%; /* Increased width for the doctors section */
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 10%; /* Move the cards more to the left, so they start from a bit of the middle */
+}
+
+.doctor-card {
+    background: linear-gradient(135deg, #f9f9f9 0%, #fff 100%);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 450px; /* Wider cards */
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.doctor-card p {
+    font-size: 18px; /* Increased font size */
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Meet Our Doctors Button Positioned Below Cards */
+.button-container {
+    margin-left: -1000px;
+    text-align: center;
+    margin-top: 500px;
+    width: 100%;
+    position: relative;
+    display: block; /* Positioned below the cards */
+}
+
+.meet-doctors-btn {
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.meet-doctors-btn:hover {
+    background-color: #e6831b;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .dental-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dental-info, .dental-doctors {
+        width: 100%;
+    }
+
+    .dental-doctors {
+        flex-direction: column;
+        margin-left: 0; /* Cards take full width in mobile view */
+    }
+
+    .doctor-card {
+        width: 100%; /* Full width for mobile screens */
+    }
+
+    .dental-info ul li img {
+        width: 40px;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #3b1f0e;
+    color: #f1e6dc;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 20%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f1e6dc;
+}
+
+.footer-column ul li:hover {
+    color: #f7941d;
+    transition: 0.3s;
+}
+
+.footer-logo img {
+    margin: 30px 0;
+    width: 100px;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #c0a992;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-column {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+}
+
+
+/* Container for dental services */
+.dental-services-section {
+    text-align: center;
+    background-color: #fef9f5; /* Background color similar to the one in the image */
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading styling */
+  .dental-services-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  /* Grid styling for service items */
+  .dental-services-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns layout */
+    gap: 20px;
+    justify-items: center;
+    padding: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Individual service item styling */
+  .service-item {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%; /* Full width */
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image styling inside the service item, enforcing equal size */
+  .service-item img {
+    width: 80px;
+    height: 80px; /* Enforcing equal height */
+    object-fit: contain; /* Ensure image fits the space without distortion */
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph for service item name */
+  .service-item p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    height: 40px; /* Fixed height to keep text aligned evenly */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Button styling for Explore Treatments */
+  .explore-treatments {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    background-color: #f7941d; /* Button color */
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-treatments:hover {
+    background-color: #d57a18; /* Darker shade on hover */
+  }
+  
+  /* Responsive for mobile view */
+  @media (max-width: 1400px) {
+    .dental-services-grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for mid-sized screens */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .dental-services-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dental-services-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+  
+    .dental-services-section h2 {
+      font-size: 24px;
+    }
+  
+    .service-item img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dental-services-grid {
+      grid-template-columns: 1fr; /* Single column for mobile screens */
+    }
+  
+    .dental-services-section h2 {
+      font-size: 20px;
+    }
+  
+    .service-item img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  
+/* Container for the EMI section */
+.emi-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); */
+    /* max-width: 1200px; */
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Left side of EMI section */
+  .emi-left {
+    text-align: left;
+  }
+  
+  .emi-left p {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .emi-left span {
+    color: #f7941d;
+  }
+  
+  .emi-left small {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Right side of EMI section */
+  .emi-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .start img {
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+  }
+
+  /* Google rating section */
+  .google-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .google-rating img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .rating-text {
+    text-align: left;
+  }
+  
+  .rating-text p {
+    margin: 0;
+  }
+  
+  .rating-text span {
+    color: #f7941d;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .reviews {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  /* City selector styling */
+  .city-selector select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Button styling */
+  .locate-clinic-btn {
+    padding: 12px 25px;
+    background-color: #f7941d;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .locate-clinic-btn:hover {
+    background-color: #d57a18;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 1024px) {
+    .emi-section {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .emi-right {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .google-rating img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .locate-clinic-btn {
+      padding: 10px 20px;
+    }
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-section {
+    background-color: #fff8f1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    flex: 1;
+    height: 765px;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-section form input, .form-section form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.form-section form button {
+    background-color: #ff9500;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.form-section form button:hover {
+    background-color: #ff7f00;
+}
+
+.info-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    display: flex;
+    background-color: #f8f4ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.info-card a {
+    color: #ff9500;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.stat-item a {
+    color: #ff9500;
+    text-decoration: none;
+}
+
+.stat-item a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}

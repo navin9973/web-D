@@ -22,3 +22,6 @@ y.addEventListener("click",function(){
     ya.style.color="blue";
     ya.style.backgroundColor="orange";
 })
+
+
+log
