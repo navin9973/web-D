@@ -1,0 +1,17 @@
+.main{
+  
+  border: 2px solid black;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+li{
+  margin-left: -100px;
+}
+button{
+  margin: 5px;
+}

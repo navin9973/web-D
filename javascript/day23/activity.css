@@ -1,0 +1,14 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.display{
+  border: 1px solid black;
+  width: 600px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: x-large;
+}
